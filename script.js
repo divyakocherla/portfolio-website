@@ -14,5 +14,5 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-// Initial call to show elements already in view
+// Initial check on page load
 window.addEventListener("load", reveal);
