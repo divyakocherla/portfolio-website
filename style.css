@@ -1,0 +1,94 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0b111a; /* Dark Blue */
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+span { color: #90EE90; } /* Light Green */
+
+/* --- Live Scroll Animations --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 1.2s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Sections */
+.section {
+    padding: 100px 10%;
+    min-height: 70vh;
+}
+
+.bg-alt { background-color: #141d2b; }
+
+.section-title {
+    font-size: 2.5rem;
+    color: #FFB6C1; /* Light Pink */
+    margin-bottom: 30px;
+    border-bottom: 3px solid #90EE90;
+    width: fit-content;
+}
+
+/* Button Layout - No Mix Fix */
+.final-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.btn-round {
+    text-decoration: none;
+    color: #90EE90;
+    border: 2px solid #90EE90;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.4s;
+    display: inline-block;
+}
+
+.btn-round:hover {
+    background: #FFB6C1;
+    color: #0b111a;
+    border-color: #FFB6C1;
+    box-shadow: 0 0 20px #FFB6C1;
+}
+
+/* Hero Style */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Cards */
+.grid { display: flex; gap: 20px; flex-wrap: wrap; }
+.card {
+    background: #1c273a;
+    border: 1px solid #FFB6C1;
+    padding: 25px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 300px;
+}
